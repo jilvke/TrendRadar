@@ -133,40 +133,38 @@ weight:
 
 # name 可以定义任意名称，只具有显示作用，即使项目运行了几天后，忽然改掉 name 也不会影响代码的正常运行
 platforms:
-  # 财经 & 投资类（高优先级）
-  - id: "cls"               # 财联社（实时快讯）
-    name: "财联社"
-    enabled: true
-  - id: "wallstreetcn"
-    name: "华尔街见闻"
-    enabled: true
-  - id: "caixin"
-    name: "财新网"
-    enabled: true
-  - id: "jinse"
-    name: "金色财经（加密/科技交叉）"
-    enabled: false  # 按需开启
+ - id: "wallstreetcn-hot"
+    name: "华尔街见闻 最热"
+  - id: "wallstreetcn-quick"
+    name: "华尔街见闻 快讯"
+  - id: "wallstreetcn-news"
+    name: "华尔街见闻 最新"
+  - id: "cls-hot"
+    name: "财联社热门"
+  - id: "gelonghui"
+    name: "格隆汇"
+  - id: "xueqiu"
+    name: "雪球"
+  - id: "jin10"
+    name: "金十数据"
+  - id: "fastbull"
+    name: "快讯通"
  # 科技 & AI 类
-  - id: "36kr"
-    name: "36氪"
-    enabled: true
   - id: "ithome"
     name: "IT之家"
+  - id: "juejin"
+    name: "掘金"
+  - id: "pcbeta"
+    name: "远景论坛"
+  - id: "sspai"
+    name: "少数派"    
+  - id: "zhihu"
+    name: "知乎"
     enabled: true
-  - id: "zhihu_hot"
-    name: "知乎热榜"
+  - id: "weibo"
+    name: "微博"
     enabled: true
-  - id: "weibo_hot"
-    name: "微博热搜"
-    enabled: true
-  - id: "bilibili_hot"
-    name: "B站热门"
+  - id: "bilibili-hot-search"
+    name: "bilibili 热搜"
     enabled: false  # 可能噪音较多，建议关闭或依赖关键词过滤
 
-  # 国际（可选）
-  - id: "reuters" 
-    name: "Reuters" # 路透社
-    enabled: false
-  - id: "techcrunch"
-    name: "TechCrunch"
-    enabled: false

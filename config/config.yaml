@@ -37,7 +37,7 @@ crawler:
 deduplication:
   enabled: true                # 启用去重
   window_hours: 24             # 在过去24小时内去重
-  similarity_threshold: 0.85   # 文本相似度阈值（0~1）
+  similarity_threshold: 0.75   # 文本相似度阈值（0~1）
 # 内容过滤规则
 # ----------------------------
 content_filter:
@@ -67,7 +67,7 @@ output:
 
 # 推送模式选择
 report:
-  mode: "daily" # 可选: "daily"|"incremental"|"current"
+  mode: "incremental" # 可选: "daily"|"incremental"|"current"
   rank_threshold: 5 # 排名高亮阈值
 
 notification:
@@ -84,7 +84,7 @@ notification:
   #   - 只想在工作日白天接收推送（如 09:00-18:00）
   #   - 希望在晚上固定时间收到汇总（如 20:00-22:00）
   push_window:
-    enabled: false  # 是否启用推送时间窗口控制，默认关闭
+    enabled: true  # 是否启用推送时间窗口控制，默认关闭
     # 注意：GitHub Actions 执行时间不稳定，时间范围建议至少留足 2 小时
     # 如果想要精准的定时推送，建议使用 Docker 部署在个人服务器上
     time_range:
